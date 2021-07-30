@@ -1,0 +1,27 @@
+Package: MEIGSEA
+Title: Inference of mutation effect on immunophenotype by integrated GSEA
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Liwen",
+           family = "Xu",
+           role = c("aut", "cre"),
+           email = "xuliwen777@gmail.com")
+Description: MEIGSEA is used to identify gene mutations associated with immunophenotypes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    covr,
+    renv
+Imports: 
+    purrr,
+    fmsb,
+    GSVA,
+    coin,
+    DESeq2,
+    fgsea,
+    clusterProfiler,
+    pheatmap,
+    methods
