@@ -29,7 +29,7 @@ get.shrunken.log2FC <- function(raw.count.profile, sample.group, case, control) 
 
   # object construction
   sample.group <- factor(sample.group, levels = c(control, case))
-  dds <- DESeq2::DESeqDataSetFromMatrix(raw.count.profile, DataFrame(sample.group), ~sample.group)
+  dds <- DESeq2::DESeqDataSetFromMatrix(raw.count.profile, S4Vectors::DataFrame(sample.group), ~sample.group)
 
   # standard analysis
   dds <- DESeq2::DESeq(dds, betaPrior = TRUE, parallel = TRUE)
