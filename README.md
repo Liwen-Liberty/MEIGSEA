@@ -1,12 +1,16 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# MEIGSEA
+# MEIGSEA: Inference of Mutation Effect on Immunophenotype by integrated Gene Set Enrichment Analysis
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of MEIGSEA is to …
+MEIGSEA is computational approach for identifying gene mutations
+associated with immunophenotypes. With RNA-seq or microarray data,
+mutation profiles of specific genes of interest and predetermined
+immunophenotype gene sets, MEIGSEA is able to effectively calculate
+significant associations between mutations and immunophenotypes.
 
 ## Installation
 
@@ -128,3 +132,12 @@ head(CIBERSORT_cell_types_markers)
 #                       mutationCalling.map = THCA_MutCountTPM$mutationCalling.map,
 #                       signature.df=CIBERSORT_cell_types_markers)
 ```
+
+## LICENSE
+
+Code and documents of this work are made available for non commercial
+research **MIT** license, more detail please see [LICENSE](LICENSE).
+
+## Contact
+
+All problems and suggestions could be reported to <xuliwen777@gmail.com>

@@ -13,12 +13,12 @@ knitr::opts_chunk$set(
 )
 ```
 
-# MEIGSEA
+# MEIGSEA: Inference of Mutation Effect on Immunophenotype by integrated Gene Set Enrichment Analysis
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of MEIGSEA is to ...
+MEIGSEA is computational approach for identifying gene mutations associated with immunophenotypes. With  RNA-seq or microarray data,  mutation profiles of specific genes of interest and predetermined immunophenotype gene sets, MEIGSEA is able to effectively calculate significant associations between mutations and immunophenotypes.
 
 ## Installation
 
@@ -28,6 +28,7 @@ You can install the released version of MEIGSEA from [GitHub](https://github.com
 # install.packages("devtools")
 devtools::install_github("Liwen-Liberty/MEIGSEA")
 ```
+
 ## Usage
 
     MEIGSEA(raw.count.profile, is.rawcount = TRUE, gene.length = NULL, tpm.exp = NULL, mutationCalling.map, 
@@ -109,3 +110,15 @@ head(CIBERSORT_cell_types_markers)
 #                       mutationCalling.map = THCA_MutCountTPM$mutationCalling.map,
 #                       signature.df=CIBERSORT_cell_types_markers)
 ```
+
+
+## LICENSE
+
+Code and documents of this work are made available for non commercial research  __MIT__ license, more detail please see
+[LICENSE](LICENSE). 
+
+
+## Contact
+
+All problems and suggestions could be reported to xuliwen777@gmail.com
+
