@@ -99,15 +99,26 @@ Liwen Xu, Shiwei Zhu
 ## Example
 
 ``` r
-#library(MEIGSEA)
-#data(THCA_MutCountTPM)
-#data(CIBERSORT_cell_types_markers)
+library(MEIGSEA)
+data(THCA_MutCountTPM)
+data(CIBERSORT_cell_types_markers)
 
 ## Mutation status data
-#THCA_MutCountTPM$mutationCalling.map[,1:5]
+THCA_MutCountTPM$mutationCalling.map[,1:5]
+#>      TCGA-DJ-A3UX TCGA-EL-A3D0 TCGA-EM-A22Q TCGA-E3-A3E2 TCGA-ET-A3BW
+#> BRAF "1"          "1"          "0"          "1"          "1"         
+#> HRAS "0"          "0"          "0"          "0"          "0"         
+#> NRAS "0"          "0"          "1"          "0"          "0"
 
 ## Predetermined immunophenotype signatures
-#head(CIBERSORT_cell_types_markers)
+head(CIBERSORT_cell_types_markers)
+#>       Gene        setAnno    Source
+#> 553 ADAM28 B.cells.memory CIBERSORT
+#> 558   AIM2 B.cells.memory CIBERSORT
+#> 560  ALOX5 B.cells.memory CIBERSORT
+#> 577  BACH2 B.cells.memory CIBERSORT
+#> 578  BANK1 B.cells.memory CIBERSORT
+#> 587    BLK B.cells.memory CIBERSORT
 
 ## Running the MEIGSEA 
 #MEIGSEA.res <- MEIGSEA(raw.count.profile =THCA_MutCountTPM$rawCount, 

@@ -91,15 +91,15 @@ Liwen Xu, Shiwei Zhu
 
 
 ```{r example}
-#library(MEIGSEA)
-#data(THCA_MutCountTPM)
-#data(CIBERSORT_cell_types_markers)
+library(MEIGSEA)
+data(THCA_MutCountTPM)
+data(CIBERSORT_cell_types_markers)
 
 ## Mutation status data
-#THCA_MutCountTPM$mutationCalling.map[,1:5]
+THCA_MutCountTPM$mutationCalling.map[,1:5]
 
 ## Predetermined immunophenotype signatures
-#head(CIBERSORT_cell_types_markers)
+head(CIBERSORT_cell_types_markers)
 
 ## Running the MEIGSEA 
 #MEIGSEA.res <- MEIGSEA(raw.count.profile =THCA_MutCountTPM$rawCount, 
