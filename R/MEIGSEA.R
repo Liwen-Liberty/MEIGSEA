@@ -53,7 +53,7 @@ MEIGSEA <- function(raw.count.profile, is.rawcount = TRUE, gene.length = NULL, t
   corscore.df <- original.res$corscore.df
   rownames(corscore.df) <- NULL
 
-  if (cond.corr.anal) {
+  if (cond.corr.anal&(nrow(mutationCalling.map)>1)) {
     # Conditional Correlation Analysis
     sig.corscore.df <- CondCorrAnal(corscore.df,
       raw.count.profile = raw.count.profile, is.rawcount = is.rawcount, gene.length = gene.length, tpm.exp = tpm.exp, mutationCalling.map = mutationCalling.map,
